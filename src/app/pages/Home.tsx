@@ -27,9 +27,9 @@ export function Home() {
   ];
 
   const stats = [
-    { value: "500+", label: "Products" },
+    { value: "30+", label: "Products" },
     { value: "15+", label: "Years Experience" },
-    { value: "50+", label: "Countries" },
+    { value: "50+", label: "Cities" },
     { value: "99.9%", label: "Quality Rate" }
   ];
 

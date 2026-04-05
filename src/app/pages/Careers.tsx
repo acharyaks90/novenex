@@ -285,10 +285,10 @@ export function Careers() {
             We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
           </p>
           <a
-            href="mailto:careers@novanex.in"
+            href="mailto:support@novanex.in"
             className="inline-flex items-center px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-all shadow-lg"
           >
-            Send Resume to careers@novanex.in
+            Send Resume to support@novanex.in
           </a>
         </div>
       </section>

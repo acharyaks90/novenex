@@ -15,7 +15,13 @@ export function Contact() {
     e.preventDefault();
     // Handle form submission
     console.log("Form submitted:", formData);
+     const whatsappNumber = "919226131359"; // Replace with actual WhatsApp number (country code + number, no spaces or special characters)
+  
+     const encodedMessage = encodeURIComponent(formData.subject + ": " + formData.message + " - Contact Info: " + formData.name + ", " + formData.email + ", " + formData.phone + ", " + formData.company );
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
     alert("Thank you for contacting us! We will get back to you soon.");
+
     setFormData({
       name: "",
       email: "",
@@ -27,17 +33,20 @@ export function Contact() {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
+    const updatedForm = {
       ...formData,
       [e.target.name]: e.target.value
-    });
+    };
+    setFormData(updatedForm);
+     
+    console.log("Form data updated:", updatedForm);
   };
 
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Head Office",
-      details: ["639, 6th Floor, Gera’s Imperium Rise, Phase 2 Infotech Park (Hinjawadi), Haveli, Mulshi, Pune-411057, Maharashtra"]
+      title: "Register & Corporate Office",
+      details: ["Novanex Pharmaceuticals Pvt Ltd Office.No-818, Sr.No-263/264, Vantage Capital(Hinjawadi), Pune-411057, Maharashtra"]
     },
     {
       icon: Phone,
@@ -237,7 +246,7 @@ export function Contact() {
               {/* Map Placeholder */}
               <div className="bg-gray-200 rounded-xl h-96 mb-8 flex items-center justify-center overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.14571709813!2d72.71637344999999!3d19.08219835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.823956893019!2d73.8567433153617!3d18.52043008472209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c08c5b0a8b2d%3A0x2b9b1b1b1b1b1b1b!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -254,21 +263,21 @@ export function Contact() {
                   Regional Offices
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
+                  {/* <div className="flex items-start space-x-3">
                     <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">North Region</p>
                       <p className="text-sm text-gray-600">Delhi NCR, India</p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="flex items-start space-x-3">
                     <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-medium text-gray-900">South Region</p>
+                      <p className="font-medium text-gray-900">Region</p>
                       <p className="text-sm text-gray-600">Pune, India</p>
                     </div>
                   </div>
-                  <div className="flex items-start space-x-3">
+                  {/* <div className="flex items-start space-x-3">
                     <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">West Region</p>
@@ -281,7 +290,7 @@ export function Contact() {
                       <p className="font-medium text-gray-900">East Region</p>
                       <p className="text-sm text-gray-600">Kolkata, India</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -295,14 +304,14 @@ export function Contact() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <h3 className="text-2xl font-bold mb-2">For Product Inquiries</h3>
-              <a href="mailto:sales@novanex.in" className="text-blue-100 hover:text-white transition-colors">
-                sales@novanex.in
+              <a href="mailto:support@novanex.in" className="text-blue-100 hover:text-white transition-colors">
+                support@novanex.in
               </a>
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-2">For Career Opportunities</h3>
-              <a href="mailto:careers@novanex.in" className="text-blue-100 hover:text-white transition-colors">
-                careers@novanex.in
+              <a href="mailto:support@novanex.in" className="text-blue-100 hover:text-white transition-colors">
+                support@novanex.in
               </a>
             </div>
             <div>

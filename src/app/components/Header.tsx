@@ -1,6 +1,8 @@
 import { Link, useLocation } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from '../../assets/NOVANEX-LOGO.png'; // Adjust path as needed
+
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,12 +26,15 @@ export function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
+         
+
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
+            {/* <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
               <span className="text-white text-2xl font-bold">N</span>
-            </div>
+            </div> */}
+             <img src={logo} alt="Novanex Logo" className="h-10" />
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900">Novanex</span>
+              {/* <span className="text-xl font-bold text-gray-900">Novanex</span> */}
               <span className="text-xs text-gray-600">Pharmaceuticals Private Limited</span>
             </div>
           </Link>

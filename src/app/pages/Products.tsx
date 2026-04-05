@@ -20,235 +20,43 @@ export function Products() {
     { name: "All", icon: Pill },
     { name: "Cardiovascular", icon: Heart },
     { name: "Neurological", icon: Brain },
-    { name: "Antibiotics", icon: Shield },
     { name: "Pain Management", icon: Activity },
-    { name: "Respiratory", icon: Stethoscope },
-    { name: "Gastroenterology", icon: Activity },
-    { name: "Antipyretics", icon: Thermometer }
+    { name: "Antipyretics", icon: Thermometer },
+    { name: "Gastroenterology", icon: Activity }
   ];
 
   const products = [
-    // Cardiovascular
-    {
-      name: "Atenolol 50mg",
-      category: "Cardiovascular",
-      form: "Tablet",
-      description: "Beta-blocker for hypertension and angina management",
-      composition: "Atenolol 50mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Amlodipine 5mg",
-      category: "Cardiovascular",
-      form: "Tablet",
-      description: "Calcium channel blocker for blood pressure control",
-      composition: "Amlodipine Besylate 5mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Atorvastatin 10mg",
-      category: "Cardiovascular",
-      form: "Tablet",
-      description: "Lipid-lowering agent for cholesterol management",
-      composition: "Atorvastatin Calcium 10mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Clopidogrel 75mg",
-      category: "Cardiovascular",
-      form: "Tablet",
-      description: "Antiplatelet agent to prevent blood clots",
-      composition: "Clopidogrel Bisulfate 75mg",
-      packaging: "10x10 Blister Pack"
-    },
-    
-    // Antibiotics
-    {
-      name: "Amoxicillin 500mg",
-      category: "Antibiotics",
-      form: "Capsule",
-      description: "Broad-spectrum antibiotic for bacterial infections",
-      composition: "Amoxicillin Trihydrate 500mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Azithromycin 500mg",
-      category: "Antibiotics",
-      form: "Tablet",
-      description: "Macrolide antibiotic for respiratory infections",
-      composition: "Azithromycin Dihydrate 500mg",
-      packaging: "3 Tablets"
-    },
-    {
-      name: "Ciprofloxacin 500mg",
-      category: "Antibiotics",
-      form: "Tablet",
-      description: "Fluoroquinolone antibiotic for various infections",
-      composition: "Ciprofloxacin HCl 500mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Cefixime 200mg",
-      category: "Antibiotics",
-      form: "Tablet",
-      description: "Third-generation cephalosporin antibiotic",
-      composition: "Cefixime Trihydrate 200mg",
-      packaging: "10x10 Blister Pack"
-    },
-
-    // Pain Management
-    {
-      name: "Paracetamol 500mg",
-      category: "Pain Management",
-      form: "Tablet",
-      description: "Analgesic and antipyretic for pain and fever relief",
-      composition: "Paracetamol 500mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Ibuprofen 400mg",
-      category: "Pain Management",
-      form: "Tablet",
-      description: "NSAID for pain, inflammation, and fever",
-      composition: "Ibuprofen 400mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Diclofenac 50mg",
-      category: "Pain Management",
-      form: "Tablet",
-      description: "NSAID for pain and inflammation management",
-      composition: "Diclofenac Sodium 50mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Tramadol 50mg",
-      category: "Pain Management",
-      form: "Capsule",
-      description: "Opioid analgesic for moderate to severe pain",
-      composition: "Tramadol HCl 50mg",
-      packaging: "10x10 Blister Pack"
-    },
-
-    // Neurological
-    {
-      name: "Gabapentin 300mg",
-      category: "Neurological",
-      form: "Capsule",
-      description: "Anticonvulsant for neuropathic pain and seizures",
-      composition: "Gabapentin 300mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Pregabalin 75mg",
-      category: "Neurological",
-      form: "Capsule",
-      description: "For neuropathic pain and partial seizures",
-      composition: "Pregabalin 75mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Alprazolam 0.5mg",
-      category: "Neurological",
-      form: "Tablet",
-      description: "Benzodiazepine for anxiety disorders",
-      composition: "Alprazolam 0.5mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Escitalopram 10mg",
-      category: "Neurological",
-      form: "Tablet",
-      description: "SSRI antidepressant for depression and anxiety",
-      composition: "Escitalopram Oxalate 10mg",
-      packaging: "10x10 Blister Pack"
-    },
-
-    // Respiratory
-    {
-      name: "Montelukast 10mg",
-      category: "Respiratory",
-      form: "Tablet",
-      description: "Leukotriene receptor antagonist for asthma",
-      composition: "Montelukast Sodium 10mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Salbutamol Syrup",
-      category: "Respiratory",
-      form: "Syrup",
-      description: "Bronchodilator for asthma and COPD",
-      composition: "Salbutamol 2mg/5ml",
-      packaging: "100ml Bottle"
-    },
-    {
-      name: "Cetirizine 10mg",
-      category: "Respiratory",
-      form: "Tablet",
-      description: "Antihistamine for allergic rhinitis",
-      composition: "Cetirizine HCl 10mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Dextromethorphan Syrup",
-      category: "Respiratory",
-      form: "Syrup",
-      description: "Cough suppressant for dry cough",
-      composition: "Dextromethorphan HBr 10mg/5ml",
-      packaging: "100ml Bottle"
-    },
-
-    // Gastroenterology
-    {
-      name: "Omeprazole 20mg",
-      category: "Gastroenterology",
-      form: "Capsule",
-      description: "Proton pump inhibitor for acid reflux and ulcers",
-      composition: "Omeprazole 20mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Pantoprazole 40mg",
-      category: "Gastroenterology",
-      form: "Tablet",
-      description: "PPI for GERD and gastric ulcers",
-      composition: "Pantoprazole Sodium 40mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Ranitidine 150mg",
-      category: "Gastroenterology",
-      form: "Tablet",
-      description: "H2 blocker for acid reduction",
-      composition: "Ranitidine HCl 150mg",
-      packaging: "10x10 Blister Pack"
-    },
-    {
-      name: "Domperidone 10mg",
-      category: "Gastroenterology",
-      form: "Tablet",
-      description: "Antiemetic for nausea and vomiting",
-      composition: "Domperidone 10mg",
-      packaging: "10x10 Blister Pack"
-    },
-
-    // Antipyretics
-    {
-      name: "Paracetamol Syrup",
-      category: "Antipyretics",
-      form: "Syrup",
-      description: "Fever reducer for children and adults",
-      composition: "Paracetamol 250mg/5ml",
-      packaging: "60ml Bottle"
-    },
-    {
-      name: "Ibuprofen Suspension",
-      category: "Antipyretics",
-      form: "Suspension",
-      description: "Antipyretic and anti-inflammatory suspension",
-      composition: "Ibuprofen 100mg/5ml",
-      packaging: "100ml Bottle"
-    }
+    { name: "Triptonex 5/10/25", composition: "Amitriptyline Hydrochloride 5/10/25 mg Tablet", category: "Neurological", form: "Tablet", description: "Used for neurological health and mood stabilization.", packaging: "Standard box packaging." },
+    { name: "Triptonex-PR", composition: "Amitriptyline 10 mg+ Propranolol  40 mg Tablet", category: "Neurological", form: "Tablet", description: "Combination therapy for neurological and related conditions.", packaging: "Standard box packaging." },
+    { name: "Triptonex-PR SEMI", composition: "Amitriptyline 5 mg+ Propranolol  20 mg  Tablet", category: "Neurological", form: "Tablet", description: "Combination therapy for neurological and related conditions.", packaging: "Standard box packaging." },
+    { name: "Triptonex-M 5/ 10", composition: "Amitriptyline 5/ 10  mg + Mecobalamin 1500 mcg Tablet", category: "Neurological", form: "Tablet", description: "Supports nerve health and mood stabilization.", packaging: "Standard box packaging." },
+    { name: "Gabasam -NT 100 / 400", composition: "Gabapentin 100/ 400 mg + Nortriptyline 10 mg  Tablet", category: "Neurological", form: "Tablet", description: "For neuropathic pain and neurological support.", packaging: "Standard box packaging." },
+    { name: "Pregaplex 50/ 75", composition: "Pregabalin 50/ 75 mg  Tablet", category: "Neurological", form: "Tablet", description: "For neuropathic pain and seizure management.", packaging: "Standard box packaging." },
+    { name: "ULTRICON", composition: "Tramadol 37.5 mg + Paracetamol 375 mg  Tablet", category: "Pain Management", form: "Tablet", description: "Pain relief for moderate to severe pain.", packaging: "Standard box packaging." },
+    { name: "Donasep 5/ 10", composition: "Donepezil hydrochloride 5/ 10 mg  Tablet", category: "Neurological", form: "Tablet", description: "For cognitive health and memory support.", packaging: "Standard box packaging." },
+    { name: "Memagard 5/ 10", composition: "Memantine hydrochloride 5/ 10 mg Tablet", category: "Neurological", form: "Tablet", description: "Supports cognitive function and memory.", packaging: "Standard box packaging." },
+    { name: "Donasep M 5/ 10", composition: "Donepezil 5 mg + Memantine 5/10 mg  Tablet", category: "Neurological", form: "Tablet", description: "Combination for cognitive and memory support.", packaging: "Standard box packaging." },
+    { name: "Restipil", composition: "Flupenthixol 0.5 mg+ Melitracen 10 mg Tablet", category: "Neurological", form: "Tablet", description: "For mood stabilization and neurological health.", packaging: "Standard box packaging." },
+    { name: "Cipranex 5/ 10", composition: "Escitalopram oxalate 5/ 10 mg Tablet", category: "Neurological", form: "Tablet", description: "For mood disorders and neurological support.", packaging: "Standard box packaging." },
+    { name: "Cipranex Plus / Lite", composition: "Escitalopram  10 mg + Clonazepam 0.5/0.25 mg Tablet", category: "Neurological", form: "Tablet", description: "Combination for mood and anxiety management.", packaging: "Standard box packaging." },
+    { name: "Cipranex Max / Mini", composition: "Escitalopram 5 mg + Clonazepam 0.5/0.25 mg Tablet", category: "Neurological", form: "Tablet", description: "Combination for mood and anxiety management.", packaging: "Standard box packaging." },
+    { name: "Ribonerv CD3", composition: "Methylcobalamin 1500 mcg + Benfotiamine 150 mg + Chromium Picolinate 200 mcg + Alpha Lipoic Acid 100 mg +Inositol 150 mg + Selenium Dioxide Monohydrate 55 mcg + Folic Acid 1.5 mg + Calcium Carbonate 500 Mg +  Vitamin D3 1000 IU", category: "Neurological", form: "Tablet", description: "Nutritional support for nerve health.", packaging: "Standard box packaging." },
+    { name: "Ribonerv  D3", composition: "Methylcobalamin 1500 mcg + Pyridoxine hydrochloride 5 mg + Folic Acid 20 mg +  Vitamin D3 1000 IU Tablet", category: "Neurological", form: "Tablet", description: "Nutritional support for nerve health.", packaging: "Standard box packaging." },
+    { name: "Nervnox OD", composition: "Methylcobalamin 1500 mcg + Benfotiamine 150 mg + Chromium Picolinate 200 mcg + Alpha Lipoic Acid 100 mg +Inositol 150 mg + Selenium Dioxide Monohydrate 55 mcg + Folic Acid 1.5 mg Tablet", category: "Neurological", form: "Tablet", description: "Nutritional support for nerve health.", packaging: "Standard box packaging." },
+    { name: "Actijet D3 60K Nano Shot", composition: "Cholecalciferol (Vitamin D3) Oral Solution 60000 I.U/ 5 ml Nano Shot Bottle", category: "Antipyretics", form: "Oral Solution", description: "Vitamin D3 supplement for bone health.", packaging: "Bottle packaging." },
+    { name: "Dvlar OD 250/ 500", composition: "Divalproex Sodium 250/500 mg (Extended Release Tablet)", category: "Neurological", form: "Tablet", description: "For seizure and mood stabilization.", packaging: "Standard box packaging." },
+    { name: "Rosaple As 75/150", composition: "Rosuvastatin 10 mg + Asprine 75/ 150 mg Capsule", category: "Cardiovascular", form: "Capsule", description: "For cardiovascular health and cholesterol management.", packaging: "Standard box packaging." },
+    { name: "Nervnox AQ PFS", composition: "Methylcobalamin 1500 mcg/ 1 ml Prefilled Methylcobalamin Syringe IV / IM / Subcute", category: "Neurological", form: "Injection", description: "Nutritional support for nerve health.", packaging: "Prefilled syringe." },
+    { name: "Mylinstar inj", composition: "Methylcobalamin 1500 mcg + Thiamine 100 mg + Niacinamide 100 mg + Pyridoxine Hcl 100 mg +  D-Panthenol 50 mg  Benzyl Alcohol 2% V/V As Preservative- (Each 2 ml Dispo Pack)", category: "Neurological", form: "Injection", description: "Nutritional injection for nerve health.", packaging: "Dispo pack." },
+    { name: "Thiolift Tab/ inj", composition: "Thiamine hydrochloride 100 mg Tablet, Thiamine hydrochloride 100 mg/ml ( 2ml inj )", category: "Neurological", form: "Tablet/Injection", description: "Thiamine supplement for nerve health.", packaging: "Tablet/Injection packaging." },
+    { name: "Cognijet inj", composition: "Cerebroprotein hydrolysate 60 mg inj", category: "Neurological", form: "Injection", description: "For cognitive and neurological support.", packaging: "Injection packaging." },
+    { name: "EPABrain-DHA Syr", composition: "Omega-3 (Fish oil) 705 mg + Fructo-oligosaccharides 6 gm + EPA (Eicosapentaenoic acid ) 376 mg + DHA (Docosahexaenoic acid) 235 mg + Vitamin D3 400 IU ( Each Serving Quantity 10 ml  ) 200 ml Bottle", category: "Neurological", form: "Syrup", description: "Omega-3 and DHA supplement for brain health.", packaging: "Bottle packaging." },
+    { name: "Carnostar-DS Syr", composition: "L-Carnosine 200 mg + DHA 200 mg + Co-enzyme Q-10 50 mg + Vitamin D3-400 IU ( 200 ml Suspension Bottle )", category: "Neurological", form: "Syrup", description: "Nutritional syrup for brain and body health.", packaging: "Bottle packaging." },
+    { name: "Carnostar Syr", composition: "L-Carnosine 100 mg + DHA 100 mg + Co-enzyme Q-10 25 mg  ( 200 ml Suspension Bottle )", category: "Neurological", form: "Syrup", description: "Nutritional syrup for brain and body health.", packaging: "Bottle packaging." },
+    { name: "Nervnox Syr", composition: "Methylcobalamin 500 mcg + Thiamine 10 mg + Pyridoxine 3 mg + D-Panthenol 5 mg + L-Lysine 150 mg + Added Vitamines & Minerals  Syr", category: "Neurological", form: "Syrup", description: "Nutritional syrup for nerve health.", packaging: "Bottle packaging." },
+    { name: "Nervcal-HD", composition: "Calcium Carbonate 1250 mg ( Eq. to Elemental Calcium 500 mg ) + Vitamin D3 250 IU Tablet", category: "Antipyretics", form: "Tablet", description: "Calcium and Vitamin D3 supplement for bone health.", packaging: "Standard box packaging." },
+    { name: "Pentonex 40", composition: "Pantoprazole 40 mg Tablet", category: "Gastroenterology", form: "Tablet", description: "For gastric acid reduction and digestive health.", packaging: "Standard box packaging." },
+    { name: "ZAGVIA-MV", composition: "Gliclazide 80 mg + Metformin 500 mg  + Voglibose 0.2 mg ( ( Sustained Release ) Tablet", category: "Cardiovascular", form: "Tablet", description: "For blood sugar and cardiovascular management.", packaging: "Standard box packaging." }
   ];
 
   const filteredProducts = products.filter(product => {
