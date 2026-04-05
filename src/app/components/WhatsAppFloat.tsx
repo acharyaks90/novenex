@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
 export function WhatsAppFloat() {
-  const whatsappNumber = "918930068008"; // Replace with actual WhatsApp number (country code + number, no spaces or special characters)
+  const whatsappNumber = "919226131359"; // Replace with actual WhatsApp number (country code + number, no spaces or special characters)
   const defaultMessage = "Hello! I would like to inquire about your pharmaceutical products.";
   
   const handleWhatsAppClick = () => {

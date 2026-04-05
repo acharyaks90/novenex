@@ -37,22 +37,22 @@ export function Contact() {
     {
       icon: MapPin,
       title: "Head Office",
-      details: ["123 Pharma Street", "Medical District, Mumbai", "Maharashtra 400001, India"]
+      details: ["639, 6th Floor, Gera’s Imperium Rise, Phase 2 Infotech Park (Hinjawadi), Haveli, Mulshi, Pune-411057, Maharashtra"]
     },
     {
       icon: Phone,
       title: "Phone",
-      details: ["+91 123 456 7890", "+91 098 765 4321"]
+      details: ["+91 70506 05093", "+91 92261 31359"]
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@novanex.in", "sales@novanex.in", "careers@novanex.in"]
+      details: ["support@novanex.in", "novanex.pharmaceutical@gmail.com"]
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 9:00 AM - 1:00 PM", "Sunday: Closed"]
+      details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 9:00 AM - 2:00 PM", "Sunday: Closed"]
     }
   ];
 
@@ -265,7 +265,7 @@ export function Contact() {
                     <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">South Region</p>
-                      <p className="text-sm text-gray-600">Bangalore, India</p>
+                      <p className="text-sm text-gray-600">Pune, India</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -307,8 +307,8 @@ export function Contact() {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-2">General Inquiries</h3>
-              <a href="mailto:info@novanex.in" className="text-blue-100 hover:text-white transition-colors">
-                info@novanex.in
+              <a href="mailto:support@novanex.in" className="text-blue-100 hover:text-white transition-colors">
+                support@novanex.in
               </a>
             </div>
           </div>

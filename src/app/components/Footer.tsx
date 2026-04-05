@@ -52,15 +52,18 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                <span className="text-sm">123 Pharma Street, Medical District, City, State 123456</span>
+                <span className="text-sm">639, 6th Floor, Gera’s Imperium Rise, Phase 2 Infotech Park (Hinjawadi), Haveli, Mulshi,
+
+Pune-411057, Maharashtra</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-sm">+91 123 456 7890</span>
+                <span className="text-sm">+91  70506 05093,+91 92261 31359</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-sm">info@novanex.in</span>
+                <span className="text-sm">support@novanex.in,novanex.pharmaceutical@gmail.com
+</span>
               </li>
             </ul>
           </div>
