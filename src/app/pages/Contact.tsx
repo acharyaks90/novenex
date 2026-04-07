@@ -56,7 +56,7 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      details: ["support@novanex.in", "novanex.pharmaceutical@gmail.com"]
+      details: ["novanex.pharmaceutical@gmail.com"]
     },
     {
       icon: Clock,
@@ -260,21 +260,21 @@ export function Contact() {
               {/* Regional Offices */}
               <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  Regional Offices
+                  Areas
                 </h3>
                 <div className="space-y-4">
-                  {/* <div className="flex items-start space-x-3">
-                    <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0 mt-1" />
-                    <div>
-                      <p className="font-medium text-gray-900">North Region</p>
-                      <p className="text-sm text-gray-600">Delhi NCR, India</p>
-                    </div>
-                  </div> */}
                   <div className="flex items-start space-x-3">
                     <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900">Region</p>
-                      <p className="text-sm text-gray-600">Pune, India</p>
+                      <p className="text-sm text-gray-600">Madhya Pradesh, India</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <MapPin className="h-5 w-5 text-blue-600 flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-medium text-gray-900">Region</p>
+                      <p className="text-sm text-gray-600">Maharashtra, India</p>
                     </div>
                   </div>
                   {/* <div className="flex items-start space-x-3">
@@ -304,20 +304,20 @@ export function Contact() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <h3 className="text-2xl font-bold mb-2">For Product Inquiries</h3>
-              <a href="mailto:support@novanex.in" className="text-blue-100 hover:text-white transition-colors">
-                support@novanex.in
+              <a href="mailto:novanex.pharmaceutical@gmail.com" className="text-blue-100 hover:text-white transition-colors">
+                novanex.pharmaceutical@gmail.com
               </a>
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-2">For Career Opportunities</h3>
-              <a href="mailto:support@novanex.in" className="text-blue-100 hover:text-white transition-colors">
-                support@novanex.in
+              <a href="mailto:novanex.pharmaceutical@gmail.com" className="text-blue-100 hover:text-white transition-colors">
+                novanex.pharmaceutical@gmail.com
               </a>
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-2">General Inquiries</h3>
-              <a href="mailto:support@novanex.in" className="text-blue-100 hover:text-white transition-colors">
-                support@novanex.in
+              <a href="mailto:novanex.pharmaceutical@gmail.com" className="text-blue-100 hover:text-white transition-colors">
+                novanex.pharmaceutical@gmail.com
               </a>
             </div>
           </div>

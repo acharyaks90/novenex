@@ -60,7 +60,7 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                <span className="text-sm">support@novanex.in,novanex.pharmaceutical@gmail.com
+                <span className="text-sm">novanex.pharmaceutical@gmail.com
 </span>
               </li>
             </ul>

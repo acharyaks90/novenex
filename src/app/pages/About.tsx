@@ -26,12 +26,10 @@ export function About() {
   ];
 
   const milestones = [
-    { year: "2008", event: "Company Founded" },
-    { year: "2012", event: "WHO-GMP Certification Achieved" },
-    { year: "2015", event: "Expanded to International Markets" },
-    { year: "2018", event: "Launched 100th Product" },
-    { year: "2020", event: "New State-of-the-Art Facility" },
-    { year: "2023", event: "Reached 50+ Countries" }
+    { year: "2023", event: "Company Founded" },
+    { year: "2024", event: "WHO-GMP Certification Achieved" },
+    { year: "2025", event: "Expanded to National Markets" },
+    { year: "2026", event: "Launched 30th Product" }
   ];
 
   return (
